@@ -518,7 +518,7 @@
         {
             "provider": "MrSlotty",
             "currency": "MMK",
-            "status": "ACTIVATED",
+            "status": "DEACTIVATED",
             "provider_id": 49,
             "product_id": 1152,
             "product_code": 1111,

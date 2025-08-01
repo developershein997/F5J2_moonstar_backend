@@ -110,7 +110,7 @@ class DatabaseSeeder extends Seeder
             MrSlotyFaziSlotSeeder::class,
             MrSlotyFelixSlotSeeder::class,
             MrSlotyFuntaSlotSeeder::class,
-            MrSlotyGamingWorldSlotSeeder::class,
+            //MrSlotyGamingWorldSlotSeeder::class,
             MrSlotyKAGamingSlotSeeder::class,
             MrSlotyKironSlotSeeder::class,
             MrSlotyVoltSlotSeeder::class,
