@@ -123,7 +123,7 @@ class PermissionRoleTableSeeder extends Seeder
     private function cleanupExistingAssignments(): void
     {
         try {
-            DB::table('permission_role')->truncate();
+            DB::table('permission_role')->delete();
             Log::info('Cleaned up existing permission assignments');
         } catch (\Exception $e) {
             Log::error('Failed to cleanup existing permission assignments: '.$e->getMessage());

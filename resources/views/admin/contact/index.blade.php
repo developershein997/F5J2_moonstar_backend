@@ -53,7 +53,7 @@
                                                 style="font-size: 20px;"></i></a>
                                         <a href="{{ route('admin.contact.show', $contact->id) }}" data-bs-toggle="tooltip"
                                             data-bs-original-title="Preview Contact Detail">
-                                            <i class="fa-solid fa-eye  text-success " style="font-size: 20px;"></i>
+                                            <i class="fas fa-eye  text-success " style="font-size: 20px;"></i>
                                         </a>
                                         <form class="d-inline" action="{{ route('admin.contact.destroy', $contact->id) }}"
                                             method="POST">

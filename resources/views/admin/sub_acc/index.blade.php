@@ -27,7 +27,8 @@
                             <h3>Sub Account Lists</h3>
                         </div>
                         <div class="card-body">
-                            <table id="mytable" class="table table-bordered table-hover table-responsive">
+                            <div class="table-responsive">
+                            <table id="mytable" class="table table-bordered table-hover ">
                                 <thead>
                                     <th>#</th>
                                     <th>SubAccId</th>
@@ -94,12 +95,11 @@
                                                         </a>
 
                                                     </td>
-
                                                 </tr>
                                             @endforeach
                                         @else
                                             <tr>
-                                                <td col-span=8>
+                                                <td colspan="8">
                                                     There was no Players.
                                                 </td>
                                             </tr>
@@ -109,6 +109,7 @@
                                 </tbody>
 
                             </table>
+                            </div>
                         </div>
                         <!-- /.card-body -->
                     </div>
