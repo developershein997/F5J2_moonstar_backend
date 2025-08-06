@@ -13,9 +13,9 @@ use Illuminate\Support\Facades\Log;
 
 class AutoPlayerCreateController extends Controller
 {
-    
+
     private const PLAYER_ROLE = 5;
-    
+
     public function register(Request $request)
     {
         // Validate the request
@@ -39,7 +39,7 @@ class AutoPlayerCreateController extends Controller
             ], 422);
         }
 
-        $agent_referral_code = 'AGENTshk8H1';
+        $agent_referral_code = 'MSAjpneSi';
 
         $agent = User::where('referral_code', $agent_referral_code)->first();
 

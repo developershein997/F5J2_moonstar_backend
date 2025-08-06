@@ -55,7 +55,7 @@ Route::post('/register', [AuthController::class, 'register']);
 Route::post('/player-change-password', [AuthController::class, 'playerChangePassword']);
 Route::post('/logout', [AuthController::class, 'logout']);
 
-// auto player create route 
+// auto player create route
 Route::post('/guest-register', [AutoPlayerCreateController::class, 'register']);
 
 Route::get('product-list', [ProductListController::class, 'index']);
