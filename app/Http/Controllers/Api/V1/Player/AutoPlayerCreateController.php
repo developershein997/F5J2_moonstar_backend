@@ -39,6 +39,9 @@ class AutoPlayerCreateController extends Controller
             ], 422);
         }
 
+
+        // get referral_code
+
         $agent_referral_code = 'MSAjpneSi';
 
         $agent = User::where('referral_code', $agent_referral_code)->first();
