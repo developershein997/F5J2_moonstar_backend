@@ -1,22 +1,22 @@
 sudo apt install postgresql postgresql-contrib -y
 sudo systemctl status postgresql
-CREATE DATABASE sm50_db;
-CREATE USER sm50_user WITH PASSWORD 'sm50moonster';
-GRANT ALL PRIVILEGES ON DATABASE sm50_db TO sm50_user;
-ALTER USER sm50_user WITH PASSWORD 'luckymillion';
+CREATE DATABASE f5j2_db;
+CREATE USER f5j2_user WITH PASSWORD 'f5j2moonstar';
+GRANT ALL PRIVILEGES ON DATABASE f5j2_db TO f5j2_user;
+ALTER USER f5j2_user WITH PASSWORD 'f5j2moonstar';
 
 sudo -i -u postgres
-psql -d sm5a_db
+psql -d f5j2_db
 
-psql -h 127.0.0.1 -U sm50_user -d sm5a_db
+psql -h 127.0.0.1 -U f5j2_user -d sm5a_db
 
-GRANT ALL ON SCHEMA public TO sm50_user;
-ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO sm50_user;
-ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON SEQUENCES TO sm50_user;
+GRANT ALL ON SCHEMA public TO f5j2_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON TABLES TO f5j2_user;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT ALL ON SEQUENCES TO f5j2_user;
 
 sudo -i -u postgres
 psql -d shan
-ALTER SCHEMA public OWNER TO sm50_user;
+ALTER SCHEMA public OWNER TO f5j2_user;
 
 
 

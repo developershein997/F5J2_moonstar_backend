@@ -35,6 +35,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\V1\TwoDigit\TwoDigitBetController;
 use App\Http\Controllers\Api\V2\Shan\ShankomeeGetBalanceController;
 use App\Http\Controllers\Api\V1\DirectLaunchGameController;
+use App\Http\Controllers\Api\V1\Player\AutoPlayerCreateController;
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -53,6 +54,9 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/player-change-password', [AuthController::class, 'playerChangePassword']);
 Route::post('/logout', [AuthController::class, 'logout']);
+
+// guest-register route 
+Route::post('/guest-register', [AutoPlayerCreateController::class, 'register']);
 
 Route::get('product-list', [ProductListController::class, 'index']);
 Route::get('operators/provider-games', [GameListController::class, 'index']);
