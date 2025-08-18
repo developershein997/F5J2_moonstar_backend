@@ -20,7 +20,7 @@ class UsersTableSeeder extends Seeder
         $owner = $this->createUser(
             UserType::Owner,
             'Owner',
-            'Moonstar',
+            'Burmar888',
             '09123456789',
             null,
             'OWNER'.Str::random(6)
@@ -30,7 +30,7 @@ class UsersTableSeeder extends Seeder
         // Create system wallet
         $systemWallet = $this->createUser(
             UserType::SystemWallet,
-            'System Wallet',
+            'SystemWallet',
             'SYS001',
             '09222222222',
             null,
@@ -42,11 +42,11 @@ class UsersTableSeeder extends Seeder
         for ($i = 1; $i <= 2; $i++) {
             $agent = $this->createUser(
                 UserType::Agent,
-                "MSA $i",
-                'MSA'.str_pad($i, 3, '0', STR_PAD_LEFT),
+                "B8A $i",
+                'B8A'.str_pad($i, 3, '0', STR_PAD_LEFT),
                 '091123456'.str_pad($i, 2, '0', STR_PAD_LEFT),
                 $owner->id,
-                'MSA'.Str::random(6)
+                'B8A'.Str::random(6)
             );
             // Random initial balance between 1.5M to 2.5M
             $initialBalance = rand(1, 2) * 100_000;
@@ -57,10 +57,10 @@ class UsersTableSeeder extends Seeder
                 $player = $this->createUser(
                     UserType::Player,
                     "Player $i-$k",
-                    'MSP'.str_pad($i, 2, '0', STR_PAD_LEFT).str_pad($k, 2, '0', STR_PAD_LEFT),
+                    'B8P'.str_pad($i, 2, '0', STR_PAD_LEFT).str_pad($k, 2, '0', STR_PAD_LEFT),
                     '091111111'.str_pad($i, 1, '0', STR_PAD_LEFT).str_pad($k, 2, '0', STR_PAD_LEFT),
                     $agent->id,
-                    'MSP'.Str::random(6)
+                    'B8P'.Str::random(6)
                 );
                 // Fixed initial balance of 10,000
                 $initialBalance = 10000;
@@ -81,7 +81,7 @@ class UsersTableSeeder extends Seeder
             'name' => $name,
             'user_name' => $user_name,
             'phone' => $phone,
-            'password' => Hash::make('gscplus'),
+            'password' => Hash::make('burma888'),
             'agent_id' => $parent_id,
             'status' => 1,
             'is_changed_password' => 1,

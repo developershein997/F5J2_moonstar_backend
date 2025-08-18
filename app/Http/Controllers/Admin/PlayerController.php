@@ -518,7 +518,7 @@ class PlayerController extends Controller
     {
         $randomNumber = mt_rand(10000000, 99999999);
 
-        return 'MSP'.$randomNumber;
+        return 'B8P'.$randomNumber;
     }
 
     private function getRefrenceId($prefix = 'REF')
