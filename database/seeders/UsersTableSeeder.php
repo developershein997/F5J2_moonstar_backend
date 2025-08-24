@@ -81,7 +81,7 @@ class UsersTableSeeder extends Seeder
             'name' => $name,
             'user_name' => $user_name,
             'phone' => $phone,
-            'password' => Hash::make('burma888'),
+            'password' => Hash::make('gscplus'),
             'agent_id' => $parent_id,
             'status' => 1,
             'is_changed_password' => 1,
